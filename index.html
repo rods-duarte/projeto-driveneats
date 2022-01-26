@@ -18,48 +18,53 @@
     <!-- Menu pratos -->
     <h2>Primeiro, seu prato</h2>
     <section data-identifier="dishes">
-        <div id="prato" class="item comida selecionado" onclick="selecionarItem('prato', 'comida')" data-identifier="food-option">
+        <!-- Prato -->
+        <div id="prato" class="item comida" onclick="selecionarItem('prato', 'comida')" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
             <div>
                 <strong data-identifier="food-title">Prato Bonito</strong></br>
                 <span>Muito gostoso hummm, serve duas pessoas</span></br>
-                <span class="valor" data-identifier="food-price">R$ 45,99</span>
+                <span class="valor" data-identifier="food-price">R$ <small id="valor-prato">45,99</small></span>
             </div>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
+        <!-- Prato -->
         <div id="hamburguer" class="item comida" onclick="selecionarItem('hamburguer', 'comida')" data-identifier="food-option">
             <img src="img/prato2.jpg" alt="Prato Bonito 2">
             <div>
                 <strong data-identifier="food-title">Hamburguer</strong></br>
                 <span>Delicia muito bom recomendo !</span></br>
-                <span class="valor" data-identifier="food-price">R$ 35,99</span>
+                <span class="valor" data-identifier="food-price">R$ <small id="valor-hamburguer">35,99</small></span>
             </div>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item comida" data-identifier="food-option">
+        <!-- Prato -->
+        <div id="salada" class="item comida" onclick="selecionarItem('salada', 'comida')" data-identifier="food-option">
             <img src="img/prato3.jpg" alt="Prato Bonito 3">
             <div>
                 <strong data-identifier="food-title">Saladinha</strong></br>
                 <span>Saladinha braba, não tem erro</span></br>
-                <span class="valor" data-identifier="food-price">R$ 29,99</span>
+                <span class="valor" data-identifier="food-price">R$ <small id="valor-salada">29,99</small></span>
             </div>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item comida" data-identifier="food-option">
+        <!-- Prato -->
+        <div id="doido" class="item comida" onclick="selecionarItem('doido', 'comida')" data-identifier="food-option">
             <img src="img/prato4.jpg" alt="Prato Bonito 4">
             <div>
                 <strong data-identifier="food-title">Prato doido</strong></br>
                 <span>Não sei o que é mas deve ser bom</span></br>
-                <span class="valor" data-identifier="food-price">R$ 23,99</span>
+                <span class="valor" data-identifier="food-price">R$ <small id="valor-doido">23,99</small></span>
             </div>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
+        <!-- Prato -->
         <div id="frango" class="item comida" data-identifier="food-option" onclick="selecionarItem('frango', 'comida')">
             <img src="img/prato5.jpg" alt="Prato Bonito 5">
             <div>
                 <strong data-identifier="food-title">Franguinho</strong></br>
                 <span>Recomendo esse tem muita proteína</span></br>
-                <span class="valor" data-identifier="food-price">R$ 32,99</span>
+                <span class="valor" data-identifier="food-price">R$ <small id="valor-frango">32,99</small></span>
             </div>
             <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -67,7 +72,26 @@
     <!-- Menu Bebidas -->
     <h2>Agora, sua bebida</h2>
     <section data-identifier="drinks">
-        <div class="item" data-identifier="food-option">
+        <!-- Bebida -->
+        <div id="coca-cola" class="item bebida" data-identifier="food-option" onclick="selecionarItem('coca-cola', 'bebida')">
+            <img src="img/prato1.jpg" alt="Prato Bonito 1">
+            <div>
+                <strong data-identifier="food-title">Prato Bonito</strong></br>
+                <span>Muito gostoso hummm, serve duas pessoas</span></br>
+                <span class="valor" data-identifier="food-price">R$ <small id="valor-coca-cola">10,99</small></span>
+            </div>
+        </div>
+        <!-- Bebida -->
+        <div id="suco-laranja" class="item bebida" data-identifier="food-option" onclick="selecionarItem('suco-laranja', 'bebida')">
+            <img src="img/prato1.jpg" alt="Prato Bonito 1">
+            <div>
+                <strong data-identifier="food-title">Prato Bonito</strong></br>
+                <span>Muito gostoso hummm, serve duas pessoas</span></br>
+                <span class="valor" data-identifier="food-price">R$ <small id="valor-suco-laranja">5,99</small></span>
+            </div>
+        </div>
+        <!-- Bebida -->
+        <div class="item bebida" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
             <div>
                 <strong data-identifier="food-title">Prato Bonito</strong></br>
@@ -75,7 +99,8 @@
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
         </div>
-        <div class="item" data-identifier="food-option">
+        <!-- Bebida -->
+        <div class="item bebida" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
             <div>
                 <strong data-identifier="food-title">Prato Bonito</strong></br>
@@ -83,23 +108,8 @@
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
         </div>
-        <div class="item" data-identifier="food-option">
-            <img src="img/prato1.jpg" alt="Prato Bonito 1">
-            <div>
-                <strong data-identifier="food-title">Prato Bonito</strong></br>
-                <span>Muito gostoso hummm, serve duas pessoas</span></br>
-                <span class="valor" data-identifier="food-price">R$ 45,99</span>
-            </div>
-        </div>
-        <div class="item" data-identifier="food-option">
-            <img src="img/prato1.jpg" alt="Prato Bonito 1">
-            <div>
-                <strong data-identifier="food-title">Prato Bonito</strong></br>
-                <span>Muito gostoso hummm, serve duas pessoas</span></br>
-                <span class="valor" data-identifier="food-price">R$ 45,99</span>
-            </div>
-        </div>
-        <div class="item" data-identifier="food-option">
+        <!-- Bebida -->
+        <div class="item bebida" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
             <div>
                 <strong data-identifier="food-title">Prato Bonito</strong></br>
