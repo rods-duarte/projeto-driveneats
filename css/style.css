@@ -139,4 +139,18 @@ img {
     height: 87px;
 }
 
+.selecionado {
+    border: 3px solid #32B72F;
+}
+
+ion-icon {
+    font-size: 20px;
+    color: #32B72F;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    display: none;
+}
+
+.selecionado > ion-icon {display: block}
 /* Fim seções de seleção de item */

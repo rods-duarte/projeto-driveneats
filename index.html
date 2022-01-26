@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>DrivenFood</title>
+    <title>DrivenEats</title>
 </head>
 <body>
     <!-- Cabeçalho -->
@@ -18,45 +18,50 @@
     <!-- Menu pratos -->
     <h2>Primeiro, seu prato</h2>
     <section data-identifier="dishes">
-        <div class="item" data-identifier="food-option">
+        <div id="prato" class="item comida selecionado" onclick="selecionarItem('prato', 'comida')" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
             <div>
                 <strong data-identifier="food-title">Prato Bonito</strong></br>
                 <span>Muito gostoso hummm, serve duas pessoas</span></br>
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-identifier="food-option">
+        <div id="hamburguer" class="item comida" onclick="selecionarItem('hamburguer', 'comida')" data-identifier="food-option">
             <img src="img/prato2.jpg" alt="Prato Bonito 2">
             <div>
                 <strong data-identifier="food-title">Hamburguer</strong></br>
                 <span>Delicia muito bom recomendo !</span></br>
                 <span class="valor" data-identifier="food-price">R$ 35,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-identifier="food-option">
+        <div class="item comida" data-identifier="food-option">
             <img src="img/prato3.jpg" alt="Prato Bonito 3">
             <div>
                 <strong data-identifier="food-title">Saladinha</strong></br>
                 <span>Saladinha braba, não tem erro</span></br>
                 <span class="valor" data-identifier="food-price">R$ 29,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-identifier="food-option">
+        <div class="item comida" data-identifier="food-option">
             <img src="img/prato4.jpg" alt="Prato Bonito 4">
             <div>
                 <strong data-identifier="food-title">Prato doido</strong></br>
                 <span>Não sei o que é mas deve ser bom</span></br>
                 <span class="valor" data-identifier="food-price">R$ 23,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <div class="item" data-identifier="food-option">
+        <div id="frango" class="item comida" data-identifier="food-option" onclick="selecionarItem('frango', 'comida')">
             <img src="img/prato5.jpg" alt="Prato Bonito 5">
             <div>
                 <strong data-identifier="food-title">Franguinho</strong></br>
                 <span>Recomendo esse tem muita proteína</span></br>
                 <span class="valor" data-identifier="food-price">R$ 32,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
     </section>
     <!-- Menu Bebidas -->
@@ -114,6 +119,7 @@
                 <span>Muito gostoso hummm, serve duas pessoas</span></br>
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div class="item" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
@@ -122,6 +128,7 @@
                 <span>Muito gostoso hummm, serve duas pessoas</span></br>
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div class="item" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
@@ -130,6 +137,7 @@
                 <span>Muito gostoso hummm, serve duas pessoas</span></br>
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div class="item" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
@@ -138,6 +146,7 @@
                 <span>Muito gostoso hummm, serve duas pessoas</span></br>
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
         <div class="item" data-identifier="food-option">
             <img src="img/prato1.jpg" alt="Prato Bonito 1">
@@ -146,6 +155,7 @@
                 <span>Muito gostoso hummm, serve duas pessoas</span></br>
                 <span class="valor" data-identifier="food-price">R$ 45,99</span>
             </div>
+            <ion-icon name="checkmark-circle"></ion-icon>
         </div>
             
     </section>
@@ -153,6 +163,9 @@
     <footer>
         <button>Selecione os 3 itens </br>para fechar o pedido</button>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     
 </body>
 </html>
