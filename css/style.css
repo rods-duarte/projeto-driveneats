@@ -153,4 +153,70 @@ ion-icon {
 }
 
 .selecionado > ion-icon {display: block}
+
 /* Fim seções de seleção de item */
+
+/* Inicio finalizar pedido */
+
+#finalizar-pedido {
+    width: 100%;
+    height: 100vh;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#finalizar-pedido > div {
+    width: 90%;
+    height: 353px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    background-color: #50D074;
+    margin-top: 60px;
+}
+
+#prompt-confirmar-pedido {text-align: center;}
+
+#prompt-confirmar-pedido > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+p, #prompt-confirmar-pedido > h2, #total > strong {
+    font-size: 22px;
+    font-family: Roboto;
+    color: #FFF;
+}
+
+p, #total > strong {
+    display: inline-block;
+    margin: 7px 15px;
+}
+
+p {font-weight: 300;}
+
+#botao-confirmar-pedido {
+    width: 95%;
+    height: 52px;
+    border: none;
+
+    background-color: #FFF;
+    color: #50D074;
+    font-size: 22px;
+}
+
+#botao-cancelar-pedido {
+    width: fit-content;
+    border: none;
+
+    background-color: #50D074;
+    color: #FFF;
+    font-size: 22px;
+}
