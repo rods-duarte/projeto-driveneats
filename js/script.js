@@ -76,7 +76,7 @@ function finalizarPedido() {    // Requisita as informações do usuario e encam
     " Endereço: " + endereco;
 
     mensagem = encodeURIComponent(mensagem);
-    window.location.href="https://wa.me/5511999999999?text=" + mensagem;
+    window.open("https://wa.me/5511999999999?text=" + mensagem);
 }
 
 function cancelarPedido() {    // Retorna para a seleção de itens
