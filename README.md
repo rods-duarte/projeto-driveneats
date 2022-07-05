@@ -6,7 +6,7 @@ Is a POC of a food delivery app where you can choose a dish + Drink + Dessert co
 
 <div align=center style="display:flex; justify-content: center; gap:5%">
     <img style="width: 25%;" src="/img/driveneats-mockup1.png" />
-    <img style="width: 25%;" src="/img/driveneats-mockup2.png" />
+    <img style="width: 25%;" src="/img/driveneats-mockup-done.png" />
 </div>
 
 # Features
